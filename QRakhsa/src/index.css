@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --emergency-red: #D32F2F;
+  --safe-green: #43A047;
+  --neutral-blue: #1976D2;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+}
+
+/* Add this rule to override min-height on #root */
+#root {
+  min-height: auto !important; /* Override min-height: 100vh */
+  height: auto !important;      /* Also set height to auto for good measure */
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-emergency-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors;
+  }
+
+  .btn-danger {
+    @apply bg-emergency-red hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors;
+  }
+
+  .btn-success {
+    @apply bg-emergency-green hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition-colors;
+  }
+}

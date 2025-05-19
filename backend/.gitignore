@@ -1,0 +1,34 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+
+# Environment variables (DO NOT COMMIT SECRETS)
+.env
+
+# Logs
+logs
+*.log
+logs/*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build files
+dist/
+build/
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Editor / OS files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+Thumbs.db
