@@ -17,7 +17,7 @@ const LoginPage: React.FC = () => {
     }
 
     try {
-      const response = await axios.post("https://qrakhsa-backend.onrender.com/api/employees/login", {
+      const response = await axios.post("https://qrakhsa.onrender.com/api/employees/login", {
         username,
         password,
       });

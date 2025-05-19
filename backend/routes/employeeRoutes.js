@@ -42,7 +42,7 @@ router.post("/register", async (req, res) => {
     await employee.save(); // Save employee first to get the ID
 
     // Generate QR Code using Employee ID
-    const qrCodeURL = await QRCode.toDataURL(`https://qrakhsa-backend.onrender.com/user-profile/${employee._id}`);
+    const qrCodeURL = await QRCode.toDataURL(`https://qrakhsa.onrender.com/user-profile/${employee._id}`);
     employee.qrCode = qrCodeURL;
     console.log(employee.qrCode)
     

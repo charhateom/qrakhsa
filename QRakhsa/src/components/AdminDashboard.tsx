@@ -4,7 +4,7 @@ import { Search, MapPin, Bell, CheckCircle } from "lucide-react";
 import type { Alert, Employee } from "../types";
 import EmployeeCard from "./EmployeeCard";
 
-const API_BASE_URL = "https://qrakhsa-backend.onrender.com/api/admin";
+const API_BASE_URL = "https://qrakhsa.onrender.com/api/admin";
 
 const AdminDashboard: React.FC = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);

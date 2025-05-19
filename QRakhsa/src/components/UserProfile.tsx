@@ -11,7 +11,7 @@ const UserProfile = () => {
   const [isSending, setIsSending] = useState(false);
 
   useEffect(() => {
-    axios.get(`https://qrakhsa-backend.onrender.com/api/employees/user-profile/${employeeId}`)
+    axios.get(`https://qrakhsa.onrender.com/api/employees/user-profile/${employeeId}`)
       .then((response) => setEmployee(response.data))
       .catch((error) => console.error("Error fetching employee data:", error));
   }, [employeeId]);
@@ -27,7 +27,7 @@ const UserProfile = () => {
   const handleConfirm = async () => {
     setIsSending(true);
     try {
-      const response = await axios.post(`https://qrakhsa-backend.onrender.com/api/sos/${employeeId}/sos`);
+      const response = await axios.post(`https://qrakhsa.onrender.com/api/sos/${employeeId}/sos`);
       if (response.status === 200) {
         alert("Emergency alert sent!");
       } else {

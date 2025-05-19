@@ -57,7 +57,7 @@ const UserSignupForm: React.FC = () => {
 
     try {
       const response = await axios.post(
-        "https://qrakhsa-backend.onrender.com/api/employees/register",
+        "https://qrakhsa.onrender.com/api/employees/register",
         userData
       );
 
